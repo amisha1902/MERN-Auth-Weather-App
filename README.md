@@ -1,3 +1,56 @@
+This is a MERN stack project that includes user authentication, email verification, password reset, and role-based access control. Additionally, users can access a weather application using the OpenWeather API. Only admins can view the list of registered users.
+Features:
+User Authentication: Signup, Login, Logout
+Email Verification: Users must verify their email before accessing the app
+Password Reset: Users can reset their password via email
+
+Role-Based Access:
+Admin: Can view a list of all registered users
+User: Can access the weather application
+Weather App Integration: Fetches weather data using the OpenWeather API
+
+Tech Stack
+Frontend: React, Tailwind CSS
+Backend: Node.js, Express.js
+Database: MongoDB
+Authentication: JWT (JSON Web Token), bcrypt.js
+Email Service: Nodemailer (for email verification and password reset)
+API Integration: OpenWeather API
+
+
+Installation & Setup
+
+1. Clone the Repository
+git clone https://github.com/yourusername/mern-auth-weather.git
+cd mern-auth-weather
+
+2. Install Dependencies
+Backend:
+cd backend
+npm install
+
+Frontend:
+cd frontend
+npm install
+
+4. Set Up Environment Variables
+Create a .env file in the backend directory and add the following:
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+EMAIL_USER=your_email@example.com
+EMAIL_PASS=your_email_password
+OPENWEATHER_API_KEY=your_openweather_api_key
+
+4. Run the Project
+Start Backend Server:
+cd backend
+npm run dev
+
+Start Frontend:
+cd frontend
+npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
